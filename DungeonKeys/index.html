@@ -1,0 +1,130 @@
+<!-- 
+grid.html
+author: logan rasmussen
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Dungeon Keys</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+
+<div id="content">
+	<img id="indextitle" src="images/title.png"><br>
+	<h3>Objective</h3>
+	<p>Welcome to Dungeon Keys!  Collect the correct color key to open that color of door.  (ex. blue
+	key to open blue door) Similarly, step on the correct color switch to open that color of door. 
+	When stepping on switches to open doors, you must hurry to get to the door before it closes on you!
+	It will only stay open for a certain amount of time.  Once you make it through a door, it will stay opened.
+	The overall goal of the game is to make it outside of this small dungeon and collect your trophy that
+	is waiting for you in the grassy field.  Good luck!</p>
+	
+	<h3>Different Blocks</h3>
+	<p>(walk onto them to activate/interact)<br>
+	K: Key blocks<br>
+	D: Door blocks<br>
+	S: Switch blocks
+	</p>
+
+	<h3>Controls</h3>
+	<p>Movement: Left, Up, Right, Down arrow keys.</p>
+	<table>
+		<tr>
+			<td>Left</td>
+			<td>Up</td>
+			<td>Right</td>
+			<td>Down</td>
+		</tr>
+		<tr>
+			<td><img src="images/left.png" width="50px" height="50px"></td>
+			<td><img src="images/up.png"></td>
+			<td><img src="images/right.png"></td>
+			<td><img src="images/down.png"></td>
+		</tr>
+	</table>
+	
+	<h3>Notification Message</h3>
+	<p>As you move around, keep an eye on the notifications that are at the bottom of the screen.  They will show the last action of interest.</p>
+	
+	<h3>*TIPS*</h3>
+	<p>The game can be finished, it's not rigged for failure.<br>
+	You have to be quick to win!<br>
+	The switches don't always have the same timing.<br>
+	Some switches and doors may not be visible...</p>
+	
+	<h3>Extras</h3>
+	<p>You can select a zoom, to make the game harder.  By default the game is set to view 9x9 tiles.<br>
+	You can also enter in your name in the textbox, and it will be displayed on your character.  (If it's too long the game will look funny though, so keep it short, about 5 characters)</p>
+
+	<!--<br>
+	<h2>Preliminary Software Design</h2>
+	<h3>Updated design below</h3>
+	<p>Known arrays and objects <em>up to this point</em>:<br><br>
+	keysArray: color->true/false, maybe an object<br>
+	true means in inventory, false means not in inventory<br>
+	green<br>
+	blue<br>
+	red<br>
+	yellow<br><br>
+	
+	doorsArray: color->true/false, maybe an object<br>
+	true means open, false means closed<br>
+	green<br>
+	blue<br>
+	red<br>
+	yellow<br><br>
+	
+	switchObject: boolean (pressed/depress)<br>
+	1<br>
+	2<br>
+	3<br>
+	4<br>
+	timer function (stays actively pressed for x amount of time)<br><br>
+	
+	levelComplete: boolean (did user enter the exit tile?)<br><br>
+	
+	playerObject:<br>
+	moveLeft()<br>
+	moveUp()<br>
+	moveRight()<br>
+	moveDown()<br>
+	playerx: int; used for player x position<br>
+	playery: int; used for player y position<br>
+	
+	</p><br>
+	<h2>Updated software design</h2>
+	<p>
+	Model View:<br>
+	Functions:<br>
+	createKey(color, xpos, ypos) - creates a key at that table position<br>
+	createDoor(color, xpos, ypos) - ''<br>
+	createSwitch(color, xpos, ypos) - ''<br>
+	createPlayer(xpos, ypos) - initializes the player's position and creates the object<br>
+	tiles : array.  This array has what tiles need to be printed for the game.  it's the data for the game's world<br>
+	bounds : object {width: integer value, height: integer value}<br>
+	keys : array. [{collected:false, keyColor:"green", keyX:4, keyY:5},{another key}]<br>
+	doors: array. [{opened:false, doorColor:"green", doorx:1, doory:5}, {another door}]<br>
+	switches: array.  ''<br>
+	player: object {xpos: 4, ypos: 8, moveleft(), moveright(), movedown(), moveup()}<br><br>
+	
+	View/Controller:<br>
+	draw(): this function draws out the table into the page.  (using the tiles array from the model)<br>
+	drawObjects(): this funtion draws out the existing objects that are in the arrays( keys, doors, switches)...<br>
+	</p>-->
+
+	<a href="grid.html" target="_blank">-Play-<br>Enter the Dungeon of Keys!</a><br>
+	<a href="http://www.gamasutra.com/view/feature/134273/evaluating_game_mechanics_for_depth.php?print=1">Game Mechanics Inspired From Zelda</a><br>
+	<a href="documentation.html" target="_blank">Documentation</a><br>
+	<p>All sounds provided by Sound Jay from www.soundjay.com</p>
+	<h3>Loaded and Parsed JSON File (XMLHttpRequest Requirement)</h3>
+	<div id="jsondiv"></div>
+</div>
+<script src="js/index.js"></script>
+</body>
+
+</html>

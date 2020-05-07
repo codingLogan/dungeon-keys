@@ -1,0 +1,247 @@
+/*
+style.css
+author: logan rasmussen
+this is styling used for DungeonKeys
+*/
+
+table{
+border-collapse:collapse;
+margin-left:auto;
+margin-right:auto;
+}
+
+td{
+	background-color:grey;
+	width:50px;
+	height:50px;
+	padding: 0px;
+}
+
+body{
+	color:white;
+	text-align:center;
+	background-color:#1e1e1e;
+}
+
+h1{
+color:teal;
+font-family:"Times New Roman";
+}
+
+h2{
+color:teal;
+
+}
+
+h3{
+color:teal;
+}
+
+p{
+color:LightGreen;
+}
+
+a{
+color:yellow;
+}
+
+a:hover{
+color:pink;
+}
+
+img{
+	border: 0px;
+	display: block;
+}
+
+#gameContainer{
+	width:710px;
+	border-style:solid;
+	border-width:5px;
+	border-color:#665600;
+}
+
+#menu{
+	float:left;
+	background-color: #2C382C;
+	border-style:solid;
+	border-width: 5px;
+	border-color: #665600;
+	padding: 5px;
+	text-align: left;
+}
+
+#grid{
+	float:left;
+	background-color: black;
+	width:500px;
+	height:500px;
+}
+
+#inventory{
+	float:left;
+	background-color: #2C382C;
+	border-style:solid;
+	border-width: 5px;
+	border-color: black;
+	padding: 5px;
+	height: 480px;
+	width: 190px;
+}
+
+#messages{
+	clear: both;
+	text-align:left;
+	background-color:black;
+	border-style:solid;
+	border-width:5px;
+	border-color:#665600;
+	color: cyan;
+}
+
+#debug{
+	clear: right;
+	text-align:left;
+	background-color:red;
+	border-style:solid;
+	border-width: 3px;
+	border-color: pink;
+	width:704px;
+}
+
+#gamebody{
+	color:white;
+	text-align:center;
+	background-color: #00000F;
+}
+
+#content{
+	background-color:Black;
+	padding:25px;
+	width:820px;
+	margin:auto;
+}
+
+#box{
+	display: inline;
+	position: relative;
+	top: 700px;
+	left: 0;
+	z-index: 1;
+}
+
+#indextitle{
+	display: inline;
+}
+
+.gametable{
+	border-style:solid; 
+	border-width:5px; 
+	border-color:black;
+	margin: 0px;
+}
+
+.gamecell{
+	height: 50px;
+	width: 50px;
+	border: 0px solid #999999;
+	padding: 0;
+	margin: 0px;
+}
+
+.dirt{
+	height: 50px;
+	width: 50px;
+	background-color: brown;
+}
+
+.path{
+	height: 50px;
+	width: 50px;
+	background-color: #2C382C;
+}
+
+.grass{
+	height: 50px;
+	width: 50px;
+	background-color: green;
+}
+
+.water{
+	height: 50px;
+	width: 50px;
+	background-color: #212C64;
+}
+
+.wall{
+	height: 50px;
+	width: 50px;
+	background-color: #171717;
+}
+
+.lava{
+	height: 50px;
+	width: 50px;
+	background-color: DarkRed;
+}
+
+.player{
+	height: 50px;
+	width: 50px;
+	background-color: #CDAD00;
+}
+
+.green{
+	background-color: #008000;
+}
+
+.red{
+	background-color: #B22222;
+}
+
+.yellow{
+	background-color: #e5e500;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.pink{
+	background-color: pink;
+}
+
+.purple{
+	background-color: purple;
+}
+
+.orange{
+	background-color: orange;
+}
+
+.black{
+	background-color: black;
+}
+
+.grey{
+	background-color: grey;
+}
+
+.teal{
+	background-color: teal;
+}
+
+.door{
+	border-style: dashed;
+	border-width: 0px;
+	border-color: black;
+}
+
+.clicked{
+	background-color: #B22222;
+}
+
+.stretch{
+	width:100%;
+	height:100%;
+}

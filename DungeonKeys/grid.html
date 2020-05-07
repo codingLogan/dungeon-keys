@@ -1,0 +1,53 @@
+<!-- 
+grid.html
+author: logan rasmussen
+//all audio was found on www.soundjay.com
+-->
+
+<!DOCTYPE html>
+<html id="gamewindow">
+<head>
+	<title>Dungeon Keys</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body id="gamebody">
+<audio id="collect" src="sounds/collect.mp3">No support for audio tag</audio>
+<audio id="slide" src="sounds/slide.mp3">No support for audio tag</audio>
+<audio id="dooropen" src="sounds/dooropen.mp3">No support for audio tag</audio>
+<audio id="doorclose" src="sounds/doorclose.mp3">No support for audio tag</audio>
+<audio id="doorlock" src="sounds/doorlock.mp3">No support for audio tag</audio>
+<audio id="solid" src="sounds/solid.mp3">No support for audio tag</audio>
+<audio id="water" src="sounds/water.mp3">No support for audio tag</audio>
+<audio id="win" src="sounds/win.mp3">No support for audio tag</audio>
+<audio id="music" src="sounds/cautious-path.mp3" autoplay loop>No support for audio tag</audio>
+	
+	
+	<div id="gameContainer">
+		<div>
+			<img src="images/title.png" id="box">
+		</div>
+		<div id="menu">
+			Name:<input type="text" id="textbox"></input>
+			Zoom:<select id="select">
+				<option value=""></option>
+				<option value="5">5</option>
+				<option value="7">7</option>
+				<option value="9">9</option>
+			</select>
+			<input type="button" value="Submit" id="submit"></input>
+			Note - Submitting will refresh
+			the number of tiles you see.
+		</div>
+		<div id="grid"></div>
+		<div id="inventory"></div>
+		<div id="messages">Messages</div>
+		<div id="debug"></div>
+	</div>
+	
+	<script src="js/model_new.js"></script>
+	<script src="js/view_new.js"></script>
+</body>
+
+</html>

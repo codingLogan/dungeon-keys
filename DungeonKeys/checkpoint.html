@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Checkpoint</title>
+</head>
+
+<body style="background-color:black;">
+<div style="float:left; background-color:green;padding:5px">
+<h1>Checkpoint</h1>
+<h2>Constructors</h2>
+<p>createKey(colors, xpos, ypos): places key in array<br>
+creates a key with properties:<br>
+color: string<br>
+collected: boolean<br>
+x: int<br>
+y: int<br><br>
+
+createDoor(colors, xpos, ypos): places a door in array<br>
+creates a door with properties:<br>
+color: string<br>
+opened: bool<br>
+x: int<br>
+y: int<br></p>
+
+<h2>Arrays</h2>
+<p>keys: stores all key objects<br>
+doors: stores all door objects<br>
+mapOne: stores the map data for the level<br></p>
+
+<h2>Objects</h2>
+<h3>Engine</h3>
+<p>engine: this object holds most of the games logic<br>
+viewPosition: stores the position of the view window<br>
+x: int; x position of the 'camera'<br>
+y: int; y position of the 'camera'<br>
+setViewPosition: function; sets x and y<br><br>
+
+screen: stores the informatoin about the screen width, height, and center<br>
+width : int; width of camera<br>
+height : int; height of camera<br>
+centerx : int; center of camera<br>
+centery : int; center of camera<br>
+setScreenSize : function; sets all properties of screen<br><br>
+
+map: stores information for the level.  tiles, collidable objects, keys, doors<br>
+gameTiles : array; stores level tiles data<br>
+collide : array; stores what objects are collidable<br>
+keys : array; stores the keys to place on the map<br>
+doors : array; stores the doors to place on the map<br>
+setMap : function; sets the level tiles to use<br>
+setCollide: function; sets collidable objects<br>
+setKeys: function; sets the set of keys to use<br>
+setDoors: function; sets the doors to use<br>
+checkMapExists: function; makes sure the game exists at that location<br><br>
+
+keyboard: stores information related to keyboard and its events<br>
+getKeyCode: function; stores the codes for the arrow keys<br>
+input: function; handles the key events when they're pressed<br></p>
+
+<h3>Player</h3>
+<p>player: stores information related to the player<br>
+x: int; stores position of the player<br>
+y: int; stores position of the player<br>
+name: string; contains the name of the player, input by the user<br>
+inventory: array; stores objects picked up by the player<br>
+moveUp()/Down/Left/Right: moves the x and y position respectively<br>
+playerCollide: function; returns true if player collides with the map tiles<br>
+itemCollide: function; determines if player collides with an item<br>
+doorCollide: functoin; determines if player collides with a door<br></p>
+
+<h2>Testing</h2>
+<p>Here is a list of what you can do to test what I've actually done so far<br>
+1.  When the page is loaded the initial game is setup.  To reset the game<br>
+simply refresh the web page.  I still need to make a level sequence handler<br>
+which will help this part happen a little more functionally.<br><br>
+2.  The yellow square is the 'player' character.  To move the character<br>
+simply press any of the arrow keys to move the respective direction.  You<br>
+can see when you run into the dark grey colored tiles that it will not let<br>
+you pass through them because they are collidable.  Summed up, to test basic<br>
+movement just move around with the arrow keys.  The whole level is actuallly<br>
+larger than the viewable tiles that you can currently see.  If you move the<br>
+character around a bit you will be able to see the character move, and the<br>
+view window move as well.  We spoke about this in a meeting, and I was able<br>
+to implement it pretty well.  The 'view window'.<br><br>
+3.  Test out key collection.  If you move your character over a square with<br>
+no letter inside of it, you will collect a 'key'.  On the bottom of the page<br>
+you will see a message saying what key you collected.  Also, the inventory<br>
+on the right side of the screen will show you what keys are in your inventory.<br><br>
+4.  Test out the locked door funcitonality.  To test the doors, try to walk<br>
+through a block with a 'D' on it without that color of key.  If it's locked<br>
+and you don't have the key it will have a message at the bottom of the screen<br>
+saying it's locked.  If you try to walk through it and you have the key it<br>
+will say you opened the door and it will let you through.<br><br>
+5.  You can change your name on the character!  Just type in your name<br>
+in the textbox that is at the top of the screen and click Submit.<br>
+It is not actually a submit button, it just has the value of submit.<br>
+When you click on submit it will give you a message telling you your<br>
+name will be displayed on your character.<br><br>
+6.  You can change the 'zoom' of the game window.  If you select a value<br>
+from the dropdown menu 'Zoom', and click submit, it will reset the number<br>
+viewable tiles in the game.  It does not reset the game, just the zoom.<br>
+Sometimes the zoom sets you're character out of the screen, I still need<br>
+to fix that...  You have to move back to the center for it to behave right.<br><br>
+7.  Clickable tiles.  You can click on a tile, and it will print the literal<br>
+table cell location, not the location on the game world.  If you want to see<br>
+the location of the player in the game world look at the red debugging area<br>
+that is below all the rest of the game.  When you click on a tile the message<br>
+will appear in this red div, so look for it there.<br></p>
+</div>
+<div style="float:left; background-color:darkred;padding:5px; color:white;">
+<h1>To-Do</h1>
+<h2>Constructors</h2>
+<p>createSwitch: will create a switch object<br>
+createMob: will create a monster object<br>
+createPlayer: possibly add a second player, which will require a constructor<br>
+</p>
+
+<h2>Array</h2>
+<p>switches: will store the switch objects to place on the map<br>
+mobs: will store the monster objects to place on the map<br>
+players: will possibly store multiple players...<br></p>
+
+<h2>Engine</h2>
+<p>I will need to write code that handles monster movement and interaction...<br>
+switches: I will need to write code to handle how switches will work<br>
+Levels: I need to implement how mutliple levels will be entered into<br>
+For Example...  How you enter level 2 from level 1<br></p>
+
+<h2>Level-Design</h2>
+<p>One major part of the game that I need to figure out is the actual puzzles<br>
+that will be in the game.  So far I have a basic guy that can run around and collect<br>
+keys and open doors, only if you have the key.  It's a good, and very basic part of<br>
+the game, but it's not enough to make it particularly interesting.  What I need to do<br>
+now is make it so it requires some skill to actually obtain each key inside each room.<br></p>
+</div>
+</body>
+
+</html>
