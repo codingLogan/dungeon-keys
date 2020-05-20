@@ -5,6 +5,10 @@ A simple browser game
 Although the code is original content, and the images are original content created by myself, the audio was provided by soundjay.com.  If you have the desire to use the audio in projects, please be sure to check the license on soundjay.com
 
 ## Play the game
+https://loganras.github.io/dungeon-keys/DungeonKeys/grid.html
+There should be sounds and music
+
+### Locally play the game
 Load index.html into a browser (mostly tested in chrome)
 Instructions to play will be shown in browser
 
